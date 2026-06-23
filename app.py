@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from werkzeug.security import generate_password_hash, check_password_hash
 from forms import LoginForm, SignupForm, ExpenseForm, IncomeForm
-from expense_classifier import classifier
+#from expense_classifier import classifier
 from datetime import datetime, date
 import numpy as np
 import pandas as pd
@@ -66,7 +66,9 @@ def categorize_expense_rule_based(description):
 
 def categorize_expense(description):
     try:
-        model_category, model_confidence = classifier.predict(description)
+        #model_category, model_confidence = classifier.predict(description)
+        model_category = None
+        model_confidence = 0.0
         if model_category and model_confidence >= 0.7:
             return model_category, model_confidence, 'AI Model'
     except:
