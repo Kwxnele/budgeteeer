@@ -14,7 +14,7 @@ Flask-WTF==1.2.2
 fonttools==4.60.1
 fsspec==2025.9.0
 greenlet==3.2.4
-huggingface-hub==0.35.3
+
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.6
@@ -34,15 +34,14 @@ pytz==2025.2
 PyYAML==6.0.3
 regex==2025.9.18
 requests==2.32.5
-safetensors==0.6.2
+
 setuptools==80.9.0
 six==1.17.0
 SQLAlchemy==2.0.44
 sympy==1.14.0
-tokenizers==0.22.1
-torch==2.8.0
+
 tqdm==4.67.1
-transformers==4.57.0
+
 typing_extensions==4.15.0
 tzdata==2025.2
 urllib3==2.5.0

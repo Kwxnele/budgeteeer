@@ -74,4 +74,8 @@ class ExpenseClassifier:
             return None, 0.0
 
 # Global classifier instance
-classifier = ExpenseClassifier()
+class DummyClassifier:
+    def predict(self, description, confidence_threshold=0.7):
+        return None, 0.0
+
+classifier = DummyClassifier()
